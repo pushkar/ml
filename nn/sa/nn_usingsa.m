@@ -34,7 +34,7 @@ initial_il_bias    = rand(1, n);
 % (uniform weight)
 initial_ol_weights = ones(1, n_class*n)/(n_class*n);
 % There are n_class bias values, one for each output neuron (random)
-initial_ol_bias    = rand(1, n);
+initial_ol_bias    = rand(1, n_class);
 % starting values
 starting_values = [initial_il_weights, initial_il_bias, ...
                    initial_ol_weights, initial_ol_bias];
