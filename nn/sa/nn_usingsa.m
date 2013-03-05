@@ -37,6 +37,6 @@ initial_ol_weights = ones(1, n_class*n)/(n_class*n);
 initial_ol_bias    = rand(1, n);
 % starting values
 starting_values = [initial_il_weights, initial_il_bias, ...
-                   initial_il_weights, initial_ol_bias];
+                   initial_ol_weights, initial_ol_bias];
 
 [x, fval, flag, output] = simulannealbnd(fun, starting_values, lb, ub, sa_opts);
