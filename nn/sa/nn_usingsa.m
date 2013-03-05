@@ -23,7 +23,7 @@ lb = -Inf;
 ub = Inf;
 
 % Add 'Display' option to display result of iterations
-sa_opts = saoptimset('TolFun', 1e-6);
+sa_opts = saoptimset('TolFun', 1e-6, 'Display', 'iter');
 
 % There is n_attr attributes in dataset, and there are n neurons so there 
 % are total of n_attr*n input weights (uniform weight)
